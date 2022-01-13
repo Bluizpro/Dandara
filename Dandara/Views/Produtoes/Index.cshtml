@@ -1,0 +1,143 @@
+﻿@model IEnumerable<Dandara.Models.Produto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moeda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Condicoesdepagamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.condicaoeentrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.videodosprodutos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tamanho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cores)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricaoproduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriaa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriab)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriae)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoriag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datavalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contatovendendor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moeda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Condicoesdepagamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.condicaoeentrega)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.videodosprodutos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tamanho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cores)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricaoproduto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriaa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriab)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriae)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoriag)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datavalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contatovendendor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

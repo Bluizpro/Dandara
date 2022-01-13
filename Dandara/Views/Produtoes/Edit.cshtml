@@ -1,0 +1,124 @@
+﻿@model Dandara.Models.Produto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Produto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Preco" class="control-label"></label>
+                <input asp-for="Preco" class="form-control" />
+                <span asp-validation-for="Preco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moeda" class="control-label"></label>
+                <input asp-for="moeda" class="form-control" />
+                <span asp-validation-for="moeda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Condicoesdepagamento" class="control-label"></label>
+                <input asp-for="Condicoesdepagamento" class="form-control" />
+                <span asp-validation-for="Condicoesdepagamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="condicaoeentrega" class="control-label"></label>
+                <input asp-for="condicaoeentrega" class="form-control" />
+                <span asp-validation-for="condicaoeentrega" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="videodosprodutos" class="control-label"></label>
+                <input asp-for="videodosprodutos" class="form-control" />
+                <span asp-validation-for="videodosprodutos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tamanho" class="control-label"></label>
+                <input asp-for="tamanho" class="form-control" />
+                <span asp-validation-for="tamanho" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cores" class="control-label"></label>
+                <input asp-for="cores" class="form-control" />
+                <span asp-validation-for="cores" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricaoproduto" class="control-label"></label>
+                <input asp-for="Descricaoproduto" class="form-control" />
+                <span asp-validation-for="Descricaoproduto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriaa" class="control-label"></label>
+                <input asp-for="categoriaa" class="form-control" />
+                <span asp-validation-for="categoriaa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriab" class="control-label"></label>
+                <input asp-for="categoriab" class="form-control" />
+                <span asp-validation-for="categoriab" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriac" class="control-label"></label>
+                <input asp-for="categoriac" class="form-control" />
+                <span asp-validation-for="categoriac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriad" class="control-label"></label>
+                <input asp-for="categoriad" class="form-control" />
+                <span asp-validation-for="categoriad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriae" class="control-label"></label>
+                <input asp-for="categoriae" class="form-control" />
+                <span asp-validation-for="categoriae" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoriag" class="control-label"></label>
+                <input asp-for="categoriag" class="form-control" />
+                <span asp-validation-for="categoriag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datavalidade" class="control-label"></label>
+                <input asp-for="datavalidade" class="form-control" />
+                <span asp-validation-for="datavalidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="contatovendendor" class="control-label"></label>
+                <input asp-for="contatovendendor" class="form-control" />
+                <span asp-validation-for="contatovendendor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

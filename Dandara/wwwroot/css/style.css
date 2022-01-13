@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+}
+
+#carouselExampleInterval, #sobrecabecalho {
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+
+
+#caixademarketing {
+    margin-top: 40px;
+}
+
+
+footer {
+    background-color: #baa9ba;
+}*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+}
+
+#carouselExampleInterval, #sobrecabecalho{
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+
+
+#caixademarketing{
+
+    margin-top: 40px;
+}
+
+
+footer{
+
+    background-color: #baa9ba;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+}
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+}
+
+
+
+

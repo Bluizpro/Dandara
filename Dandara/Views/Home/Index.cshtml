@@ -1,0 +1,615 @@
+﻿@{
+    ViewData["Title"] = "Dandara";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dandara </title>
+    <link href="~/images/favicon.ico" rel="icon">
+
+    <!-- Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wgh@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap-->
+    <link href="~/css/style .css" rel="stylesheet">
+    <link href="~/css/somos.css" rel="stylesheet">
+    <link href="~/css/manyproducts.css" rel="stylesheet">
+
+   
+
+</head>
+
+<body>
+    
+
+
+    <!-- Cageçalho-->
+    <div class="header">
+        <!-- navegador-->
+        <nav class="navbar shadow-sm bg-white rounded navbar-expand-lg navbar-light">
+
+            <div class="container-fluid ">
+
+                <a class="navbar-brand mx-5" href="#">
+                    <img src="~/images/logo.svg" alt="" width="90" height="72">
+                </a>
+
+                <button class="navbar-toggler mx-5 navbar-dark bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" asp-controller="Home" asp-action="sobre">Sobre</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cabelos</a></li>
+                                <li><a class="dropdown-item" href="#">Unhas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Masculino
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-action="manyproducts">Vestuário</a></li>
+                                <li><a class="dropdown-item" href="#">Calçados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Feminino
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Vestuário</a></li>
+                                <li><a class="dropdown-item" href="#">Calçados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Agênero
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Vestuário</a></li>
+                                <li><a class="dropdown-item" href="#">Calçados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Infantil
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Vestuário</a></li>
+                                <li><a class="dropdown-item" href="#">Calçados</a></li>
+                                <li><a class="dropdown-item" href="#">Brinquedos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Beleza
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cosméticos</a></li>
+                                <li><a class="dropdown-item" href="#">Perfumaria</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sustentabilidade
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Reciclados</a></li>
+                                <li><a class="dropdown-item" href="#">Usados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Casa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cama</a></li>
+                                <li><a class="dropdown-item" href="#">Banho</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Acessórios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Óculos</a></li>
+                                <li><a class="dropdown-item" href="#">Banho</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <a class="d-flex">
+
+                        <a class="perfil" href="#"></a>
+                        <div class="btn-group-vertical">
+                            <div class="btn-group">
+
+                                <button type="button" class="btn" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </button>
+
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-action="AreaCadastro">Login</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="carrinho" style="color: black;" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart-fill mx-3" viewBox="0 0 16 16" width="25" height="25">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                    </a>
+
+
+                    <a class="lupa" style="color: black;" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search mx-3" viewBox="0 0 16 16" width="25" height="25">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+                    </a>
+
+                </div>
+
+            </div>
+    </div>
+    </nav>
+   
+
+
+
+
+
+    <!-- Carrosel-->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="~/images/slide1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="~/images/slide2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/slide3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Missão visão e valores-->
+    <div id="caixademarketing" class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+
+
+            <div class="col-lg-4">
+                <img src="~/images/missao.png" alt="#" width="140" height="140">
+
+
+                <h2>Missão</h2>
+                <p>Oferecer soluções práticas e inovadoras para o comercio local, possuindo produtos para decoração vestuario e serviços, de alto padrão de qualidade, preço justo, e com excelencia no atendimento. Proporcionar a inclusão, bem estar e o desenvolvimento do comercio local e o empreendedorismo. Gerar lucro com que garanta a sustentabilidade do negocio para pequenos e medios produtores, e conviver de forma harmoniosa com a sociedade..</p>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <img src="~/images/visao.png" alt="#" width="140" height="140">
+
+                <h2>Visão</h2>
+                <p>Reconhecimento de ser a pioneira, e o melhor portal para e-commerce de produtos afro.estar na mente dos consumidores como um portal para comercialização de produtos, que apresenta eficiencia, bom atendimento durante compra e pós-compra, ajudar a realizar sonhos e liberdade e empoderamento de pequenos e médios empreendedores.</p>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <img src="~/images/valores.png" alt="#" width="140" height="140">
+
+                <h2>Valores</h2>
+                <p>
+                    Integridade: a relação estar baseada em honestidade e lealdade.</br>
+                    Respeito: Participação de empreendedores para o sucesso do negocio.</br>
+                    Empatia: fundamentado com que agir nas nossas relações internadas e externas.</br>
+                    Empoderamento: dar voz e ouvidos à pessoas que não tenham possibilidade a vender seus produtos a canais maiores.
+                </p>
+
+            </div><!-- /.col-lg-4 -->
+
+
+        </div><!-- /.row -->
+
+
+
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/images/empreendedorismo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/diversidade.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    Toda expressão tem história.
+                    <p class="lead py-3">Toda expressão tem sua beleza.</p>
+                    <p><a class="btn btn-warning" href="#">Acesse o blog e saiba mais &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="~/images/mulherturbante.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="500" height="500" alt="Imagem responsiva">
+                <!--
+                <svg src= ""class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  -->
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 px-5">
+                <h2 class="featurette-heading">Tutoriais de turbante.</h2>
+                <p class="lead py-3">Aprenda a fazer diferentes laços.</p>
+                <p><a class="btn btn-warning" href="#">Acesse o blog e saiba mais &raquo;</a></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="~/images/tutorial.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="500" height="500" alt="Imagem responsiva">
+
+            </div>
+        </div>
+
+
+
+        <!-- /Jubutoons -->
+
+
+        <div class="container text-center" style="margin-top: 100px;margin-bottom: 10 0px;">
+            <h2>Feminino</h2>
+        </div>
+
+        <div class="container d-flex justify-content-center mt-50 mb-50">
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino1.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Vestido Etnico Preto e Branco</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 250,99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino2.jpg" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa Amarela Pinçada</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 60,00</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino3.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Vestuda Azul e Estampa Floral</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 300,00</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino4.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa com Listras Coloridas</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 70.00</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino5.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa Amarela com Gola Colorida</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 50.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/feminino6.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Bata Laranja</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 300,00</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center" style="margin-top: 100px;margin-bottom: 10 0px;">
+            <h2>Masculino</h2>
+        </div>
+
+        <div class="container d-flex justify-content-center mt-50 mb-50">
+            <div class="row">
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masclino1.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="singleproduct.html" class="text-default mb-2" data-abc="true">Bata Azul Etnica</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$550.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masculino1sentado.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa Chocolate</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 150.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masculino3.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Bata Salmão</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 550.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masculino4.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa Preta de Lã</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 250.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masculino5.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Blusa Verde</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 350.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-img-actions"> <img src="~/images/masculino6.png" class="card-img img-fluid" width="96" height="350" alt=""> </div>
+                        </div>
+                        <div class="card-body bg-light text-center">
+                            <div class="mb-2">
+                                <h6 class="font-weight-semibold mb-2"> <a href="#" class="text-default mb-2" data-abc="true">Preta Floral</a> </h6> <a href="#" class="text-muted" data-abc="true">Vestuário</a>
+                            </div>
+                            <h3 class="mb-0 font-weight-semibold">R$ 250.99</h3>
+                            <div> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> <i class="fa fa-star star"></i> </div>
+                            <div class="text-muted mb-3">34 reviews</div> <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Ver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+
+    <div class="container text-center" style="margin-top: 100px;">
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white"
+            style="background-color: #795c34">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+
+                        <img src="~/images/logo.svg" alt="" width="120" height="102" style="margin-bottom: 10px;">
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            links Úteis
+                        </h6>
+                        <p>
+                            <a class="text-white" asp-controller="Home" asp-action="Index">Home</a>
+                        </p>
+                        <p>
+                            <a class="text-white" asp-controller="Home" asp-action="sobre">Sobre</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                        <p><i class="fas fa-home mr-3"></i> Bahia, Brasil</p>
+                        <p><i class="fas fa-envelope mr-3"></i> dandaraapreta@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 00 000 000 00</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 00 000 000 00</p>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <!-- Copyright -->
+                        <div class="p-3">
+                            © 2021 Copyright:
+                            <a class="text-white" href="#">Squad 38</a>
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+
+
+                    <!-- Grid column -->
+                </div>
+            </section>
+            <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="~/js/java.js"></script>
+</body>
+
+</html>
